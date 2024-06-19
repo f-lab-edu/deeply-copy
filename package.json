@@ -8,7 +8,7 @@
     "test": "jest",
     "build": "pnpm tsc",
     "build:watch": "pnpm tsc -w",
-    "eslint": "pnpm eslint ."
+    "eslint": "npx eslint ."
   },
   "repository": {
     "type": "git",
