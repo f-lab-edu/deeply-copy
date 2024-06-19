@@ -1,0 +1,33 @@
+{
+  "name": "deeply-copy",
+  "version": "1.0.0",
+  "description": "custom deep copy function to make a brand new immutable object",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx tsc",
+    "build:watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-lab-edu/deeply-copy.git"
+  },
+  "keywords": [
+    "deepCopy",
+    "deepClone"
+  ],
+  "author": "Kangsik Kevin Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-lab-edu/deeply-copy/issues"
+  },
+  "homepage": "https://github.com/f-lab-edu/deeply-copy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
