@@ -1,1 +1,1 @@
-export function deeplyCopy(): void {}
+export function deeplyCopy(target: any): any {}
