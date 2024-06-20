@@ -1,5 +1,5 @@
 import { describe, expect, jest, test } from "@jest/globals";
-import { deeplyCopy } from "./index";
+import { deeplyCopy } from "./index.js";
 
 describe("deeplyCopy", () => {
   test("primitive type을 복사한다. ", () => {

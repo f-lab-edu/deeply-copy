@@ -2,12 +2,25 @@
   "name": "deeply-copy",
   "version": "1.0.0",
   "description": "custom deep copy function to make a brand new immutable object",
-  "main": "index.js",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./build/types/*.d.cts",
+        "default": "./build/cjs/*.cjs"
+      },
+      "import": {
+        "types": "./build/types/*.d.ts",
+        "default": "./build/esm/*.js"
+      }
+    }
+  },
   "type": "module",
   "scripts": {
     "test": "jest",
-    "build": "pnpm tsc",
-    "build:watch": "pnpm tsc -w",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build": "npm run build:esm && npm run build:cjs",
     "eslint": "npx eslint ."
   },
   "repository": {
@@ -34,6 +47,7 @@
     "babel-jest": "^29.7.0",
     "eslint": "^9.5.0",
     "jest": "^29.7.0",
+    "npm-run-all": "^4.1.5",
     "ts-jest": "^29.1.5",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1"
