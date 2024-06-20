@@ -1,9 +1,7 @@
-name: Run Jest Tests on Push and Pull Request
+name: Run Jest Tests on Pull Request
 
 on:
-  # Triggers the workflow on push or pull request events but only for the "feature/*" branch
-  push:
-    branches: ["feature/*"]
+  # Triggers the workflow on pull request events but only for the "feature/*" branch
   pull_request:
     branches: ["feature/*"]
 
