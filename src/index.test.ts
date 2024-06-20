@@ -7,7 +7,8 @@ describe('deeplyCopy', () => {
     expect(deeplyCopy(false)).toBe(false);
     expect(deeplyCopy(undefined)).toBe(undefined);
     expect(deeplyCopy(null)).toBeNull();
-    expect(deeplyCopy(Symbol('foo'))).toBe('foo');
+    expect(deeplyCopy(Symbol('foo'))).not.toBe(Symbol('foo'));
+    expect(deeplyCopy(Symbol('foo'))).not.toEqual(Symbol('foo'));
   });
   test('단일 레벨 객체를 복사한다.', () => {
     const obj = { a: 'foo', b: 'bar' };
@@ -71,7 +72,7 @@ describe('deeplyCopy', () => {
     arr.push(arr);
     const copied = deeplyCopy(arr);
     expect(copied).toEqual(arr);
-    expect(copied).not.toEqual(arr);
+    expect(copied).not.toBe(arr);
   });
   test('클래스 인스턴스를 복사한다.', () => {
     class Node {
@@ -94,6 +95,6 @@ describe('deeplyCopy', () => {
     expect(copiedNode1).not.toBe(node1);
     expect(copiedNode1.next).toEqual(node2);
     expect(copiedNode1.next).not.toBe(node2);
-    expect(copiedNode1.next.next).toBe(copiedNode1); // check circular reference
+    expect(copiedNode1.next!.next).toBe(copiedNode1); // check circular reference
   });
 });
