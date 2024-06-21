@@ -21,7 +21,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build": "npm run build:esm && npm run build:cjs",
-    "eslint": "npx eslint ."
+    "lint:fix": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
