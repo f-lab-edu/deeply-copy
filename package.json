@@ -17,7 +17,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "jest ./build/cjs",
+    "test": "jest ./src",
     "build:esm": "tsc",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build": "npm run build:esm && npm run build:cjs",
