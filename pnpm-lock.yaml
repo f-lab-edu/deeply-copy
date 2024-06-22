@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@eslint/compat':
-        specifier: ^1.1.0
-        version: 1.1.0
     devDependencies:
       '@babel/core':
         specifier: ^7.24.7
@@ -21,6 +17,9 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.24.7
         version: 7.24.7(@babel/core@7.24.7)
+      '@eslint/compat':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@eslint/js':
         specifier: ^9.5.0
         version: 9.5.0
@@ -30,6 +29,9 @@ importers:
       '@types/eslint__js':
         specifier: ^8.42.3
         version: 8.42.3
+      '@types/jest':
+        specifier: ^29.5.12
+        version: 29.5.12
       babel-jest:
         specifier: ^29.7.0
         version: 29.7.0(@babel/core@7.24.7)
@@ -862,6 +864,9 @@ packages:
 
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
+
+  '@types/jest@29.5.12':
+    resolution: {integrity: sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -3570,6 +3575,11 @@ snapshots:
   '@types/istanbul-reports@3.0.4':
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
+
+  '@types/jest@29.5.12':
+    dependencies:
+      expect: 29.7.0
+      pretty-format: 29.7.0
 
   '@types/json-schema@7.0.15': {}
 
