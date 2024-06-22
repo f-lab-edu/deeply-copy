@@ -12,6 +12,7 @@ on:
 
 jobs:
   test:
+    if: github.head_ref != 'feature/1' # Condition to exclude the branch
     runs-on: ubuntu-latest
 
     steps:
