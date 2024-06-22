@@ -4,6 +4,8 @@ on:
   # Triggers the workflow on pull request events but only for the "feature/*" branch
   pull_request:
     branches: ["main"]
+    paths-ignore: # Ensure this is also considered to ignore certain paths if needed
+      - '!feature/1' # Exclude the specific branch
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
