@@ -1,4 +1,3 @@
-import { describe, expect, test } from '@jest/globals';
 import { deeplyCopy } from './index';
 
 describe('deeplyCopy', () => {
@@ -67,7 +66,7 @@ describe('deeplyCopy', () => {
     expect(copied.a).toBe(copied);
   });
   test('사이클이 있는 배열을 복사한다.', () => {
-    type CircularArray = CircularArray[]
+    type CircularArray = CircularArray[];
     const arr: CircularArray = [];
     arr.push(arr);
     const copied = deeplyCopy(arr);
