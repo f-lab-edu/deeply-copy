@@ -1,4 +1,4 @@
-import { deeplyCopy } from '.';
+import { deeplyCopy } from './index';
 
 describe('deeplyCopy', () => {
   test('primitive type을 복사한다. ', () => {
