@@ -5,22 +5,16 @@
   "main": "src/index.js",
   "exports": {
     ".": {
-      "require": {
-        "types": "./build/types/*.d.cts",
-        "default": "./build/cjs/*.cjs"
-      },
-      "import": {
-        "types": "./build/types/*.d.ts",
-        "default": "./build/esm/*.js"
-      }
+      "import": "./build/esm/index.js",
+      "require": "./build/cjs/index.js"
     }
   },
   "type": "module",
   "scripts": {
     "test": "jest ./src",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build": "npm run build:esm && npm run build:cjs",
+    "build": "npm run build:cjs & npm run build:esm",
+    "build:cjs": "tsc --p ./cjs/tsconfig.json",
+    "build:esm": "tsc --p ./esm/tsconfig.json",
     "build:clean": "rm -rf ./build",
     "lint:fix": "npx eslint . --fix"
   },
