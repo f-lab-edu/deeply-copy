@@ -1,6 +1,6 @@
 {
   "name": "deeply-copy",
-  "version": "1.0.1-canary.5.0",
+  "version": "1.0.1-canary.4.0",
   "description": "custom deep copy function to make a brand new immutable object",
   "type": "module",
   "main": "./build/esm/index.js",
@@ -14,7 +14,8 @@
         "types": "./build/cjs/index.d.js",
         "default": "./build/cjs/index.js"
       }
-    }
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "test": "jest",
