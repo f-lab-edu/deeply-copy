@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deeplyCopy = void 0;
-function deeplyCopy(target) { }
 exports.deeplyCopy = deeplyCopy;
+function deeplyCopy(target) { }
 //# sourceMappingURL=index.js.map
