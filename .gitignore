@@ -17,7 +17,7 @@ Thumbs.db
 .env
 
 # 빌드 디렉토리
-dist/
+build/
 
 # test file
 src/foo.*
