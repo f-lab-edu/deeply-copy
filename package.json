@@ -14,18 +14,15 @@
         "types": "./build/cjs/index.d.js",
         "default": "./build/cjs/index.js"
       }
-    },
-    "./package.json": {
-      "require": "./cjs/package.json",
-      "import": "./esm/package.json"
     }
   },
   "scripts": {
     "test": "jest",
-    "build": "npm run build:cjs & npm run build:esm",
+    "build": "npm run build:cjs && npm run build:esm && npm run rename",
     "build:cjs": "tsc --p ./cjs/tsconfig.json",
     "build:esm": "tsc --p ./esm/tsconfig.json",
     "build:clean": "rm -rf ./build",
+    "rename": "node renameFiles.js",
     "lint": "pnpm eslint",
     "lint:fix": "npx eslint . --fix"
   },
