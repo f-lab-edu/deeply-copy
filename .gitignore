@@ -16,7 +16,7 @@ Thumbs.db
 # 환경 설정 파일
 .env
 
-# 빌드 디렉토리
+# 빌드관련
 build/
 
 # test file
