@@ -7,7 +7,8 @@ A custom deep copy function to make a brand new immutable object. It handles cop
 # Dual Package (CJS/ESM) 지원
 
 듀얼 패키지 지원을 위한 라이브러리나 모듈러를 별도로 사용하지 않고, TSC와 pacakge.json만을 사용하여 CJS, ESM을 모두 지원하고 있음.
+[deeply-copy](https://www.npmjs.com/package/deeply-copy)
 
-# 프로젝트 인스톨 방법
+## 프로젝트 인스톨 방법
 
 [pnpm 설치](https://pnpm.io/installation) 후 `pnpm install` 실행
