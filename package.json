@@ -1,6 +1,6 @@
 {
   "name": "deeply-copy",
-  "version": "1.0.1-canary.11.0",
+  "version": "1.0.1",
   "description": "custom deep copy function to make a brand new immutable object",
   "type": "module",
   "main": "./build/esm/index.js",
